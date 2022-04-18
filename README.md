@@ -40,5 +40,5 @@ _printf is an implementation of the already made printf function which is in the
 - [print_numbers.c](./print_numbers.c) - contains the function for `print_d`, `print_i`, which are for the %d and %i format specifiers respectively. This assists in printing numbers and integers to the standard output
 
 # Authors
-**Ajibola Matthew** | [@jibsyyyyy](https://twitter.com/jibsyyyyy) |  [LinkedIn](https://linkedin.com/in/jibbycodes)
-**Toby Osinubi** | 
+- **Ajibola Matthew** | [@jibsyyyyy](https://twitter.com/jibsyyyyy) |  [LinkedIn](https://linkedin.com/in/jibbycodes)
+- **Toby Osinubi** | 
