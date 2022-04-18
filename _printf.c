@@ -16,6 +16,7 @@ static int (*format_specifier(const char *format))(va_list)
 		{"d", print_d},
 		{"b", print_b},
 		{"u", print_u},
+		{"o", print_o},
 		{NULL, NULL}
 	};
 	for (i = 0; p[i].t != NULL; i++)
