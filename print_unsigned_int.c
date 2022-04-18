@@ -74,7 +74,7 @@ int print_o(va_list o)
 	int count;
 
 	n = va_arg(o, unsigned int);
-	m = 1073741824; /* 8 ^ 10/
+	m = 1073741824; /* 8 ^ 10 */
 	a[0] = n / m;
 	for (i = 1; i < 11; i++)
 	{
