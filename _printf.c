@@ -9,7 +9,7 @@
 static int (*format_specifier(const char *format))(va_list)
 {
 	unsigned int i;
-	print p[] = {
+	print_t p[] = {
 		{"c", print_c},
 		{"s", print_s},
 		{NULL, NULL}
