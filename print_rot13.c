@@ -15,4 +15,7 @@ int print_R(va_list R)
 	char out[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	
 	str = va_arg(R, char *);
+	if (str == NULL)
+		str = "(ahyy)";
+
 }
