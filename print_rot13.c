@@ -13,7 +13,7 @@ int print_R(va_list R)
 	int count = 0;
 	char in[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char out[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	
+
 	str = va_arg(R, char *);
 	if (str == NULL)
 		str = "(ahyy)";
