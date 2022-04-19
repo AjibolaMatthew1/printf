@@ -90,7 +90,7 @@ int print_p(va_list p)
 	unsigned int a[16];
 	unsigned int i, sum;
 	unsigned long n, m;
-	char *str = "(null)";
+	char *str = "(nil)";
 
 	n = va_arg(p, unsigned long);
 	if (n == 0)
