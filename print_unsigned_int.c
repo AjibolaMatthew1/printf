@@ -63,7 +63,8 @@ int print_u(va_list u)
 }
 
 /**
- * print_o - takes an unsigned int as an argument and returns it in its octal format
+ * print_o - takes an unsigned int as 
+ * an argument and returns it in its octal format
  * @o: unsigned int to be printed
  * Return: number of digits printed
  */
