@@ -41,4 +41,4 @@ _printf is an implementation of the already made printf function which is in the
 
 # Authors
 - **Ajibola Matthew** | [@jibsyyyyy](https://twitter.com/jibsyyyyy) |  [LinkedIn](https://linkedin.com/in/jibbycodes)
-- **Toby Osinubi** | 
+- **Toby Osinubi** | [@TobyMike Create](https://twitter.com/TobymikeCreate) | [LinkedIn](https://linkedin.com/in/oluwatobiloba-osinubi-9978741b8) 
