@@ -89,7 +89,7 @@ int print_p(va_list p)
 	int count = 0;
 	unsigned int a[16];
 	unsigned int i, sum;
-	unsigned long n , m;
+	unsigned long n, m;
 	char *str = "(null)";
 
 	n = va_arg(p, unsigned long);
