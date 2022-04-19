@@ -8,7 +8,7 @@
  * Description: Helps to call write as little as possible
  * by using a local buffer of 1024
  */
-int _putchar(char c)
+int _putcharacter(char c)
 {
 	static char buf[1024];
 	static int i;
