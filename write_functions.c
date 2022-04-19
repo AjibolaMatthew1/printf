@@ -2,13 +2,13 @@
 #include <unistd.h>
 
 /**
- * _putchar - writes the character c to stdout
+ * _putcharacter - writes the character c to stdout
  * @c: The character to print
  * Return: 1 on success, while -1 on failure
  * Description: Helps to call write as little as possible
  * by using a local buffer of 1024
  */
-int _putchar(char c)
+int _putcharacter(char c)
 {
 	static char buf[1024];
 	static int i;
