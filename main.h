@@ -2,6 +2,7 @@
 #define _MAIN_H
 
 #include <stdarg.h>
+#include <limits.h>
 
 /**
  * struct print - This structure handles the
