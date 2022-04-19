@@ -42,7 +42,7 @@ int print_hex(unsigned int n, unsigned int c)
 }
 
 /**
- * print_x: takes an unsigned int and prints it in lowercase hex notation
+ * print_x - takes an unsigned int and prints it in lowercase hex notation
  * @x: unsigned int to be printed
  * Return: number of digits printed
  */
