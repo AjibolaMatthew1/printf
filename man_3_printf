@@ -34,7 +34,7 @@ with a conversion specifier.
 .IP
 .nf
 \f[C]
-A character that specifies the type of conversion to be applied. 
+A character that specifies the type of conversion to be applied.
 \f[R]
 .fi
 .PP
