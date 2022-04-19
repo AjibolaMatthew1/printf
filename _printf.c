@@ -70,6 +70,7 @@ int _printf(const char *format, ...)
 		else
 			i++;
 	}
+	putchar(-1)
 	va_end(args);
 	return (count);
 }
