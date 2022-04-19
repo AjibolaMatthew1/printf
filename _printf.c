@@ -23,6 +23,7 @@ static int (*format_specifier(const char *format))(va_list)
 		{"r", print_r},
 		{"R", print_R},
 		{"S", print_S},
+		{"%", print_percent},
 		{NULL, NULL}
 	};
 	for (i = 0; p[i].t != NULL; i++)
