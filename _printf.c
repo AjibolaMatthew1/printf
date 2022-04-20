@@ -47,15 +47,17 @@ int _printf(const char *format, ...)
 	va_list args;
 	int (*f)(va_list);
 
+	if (!format)
+		return (-1);
+
 	va_start(args, format);
+
 	if (!format || (format[i] == '%' && !format[i + 1]))
 		return (-1);
 	if (format[i] == '%' && format[i + 1] == ' ' && !format[i + 2])
 		return (-1);
-	if (!format[i])
-		return (0);
 
-	while (format && format[i])
+	while (format[i])
 	{
 		for (; format[i] != '%' && format[i]; i++)
 		{
