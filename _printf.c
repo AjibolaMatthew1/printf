@@ -43,12 +43,9 @@ static int (*format_specifier(const char *format))(va_list)
  */
 int _printf(const char *format, ...)
 {
-	unsigned int i = 0, count = 0, r = 0;
+	unsigned int i = 0, count = 0;
 	va_list args;
 	int (*f)(va_list);
-
-	if (!format)
-		return (-1);
 
 	va_start(args, format);
 
@@ -60,10 +57,8 @@ int _printf(const char *format, ...)
 	while (format[i])
 	{
 		for (; format[i] != '%' && format[i]; i++)
-		{
 			_putchar(format[i]);
 			count++;
-		}
 		if (!format[i])
 			return (count);
 		f = format_specifier(&format[i + 1]);
