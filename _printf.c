@@ -43,7 +43,7 @@ static int (*format_specifier(const char *format))(va_list)
  */
 int _printf(const char *format, ...)
 {
-	unsigned int i = 0, count = 0;
+	unsigned int i = 0, count = 0, r = 0;
 	va_list args;
 	int (*f)(va_list);
 
@@ -59,7 +59,7 @@ int _printf(const char *format, ...)
 
 	while (format[i])
 	{
-		for (; format[i] != '%' && format[i]; i++)
+		/*for (; format[i] != '%' && format[i]; i++)
 		{
 			_putchar(format[i]);
 			count++;
@@ -80,7 +80,27 @@ int _printf(const char *format, ...)
 		if (format[i + 1] == '%')
 			i += 2;
 		else
-			i++;
+			i++;*/
+		if (format[i] == '%')
+		{
+			f = format_specifier(&format[++i]);
+			if (f)
+			{
+				r = f(args);
+				i++;
+			}
+			else if (format[i] != ' ' && format[i])
+				r = _putchar(format[i - 1]);
+			else
+			{
+				va_end(args);
+				return (-1);
+			}
+		}
+		else
+			r = _putchar(format[i++]);
+		if (r > 0)
+			count += r;
 	}
 	va_end(args);
 	return (count);
