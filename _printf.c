@@ -52,14 +52,14 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 
-	/*if (!format || (format[i] == '%' && !format[i + 1]))
+	if (!format || (format[i] == '%' && !format[i + 1]))
 		return (-1);
 	if (format[i] == '%' && format[i + 1] == ' ' && !format[i + 2])
-		return (-1);*/
+		return (-1);
 
 	while (format[i])
 	{
-		/*for (; format[i] != '%' && format[i]; i++)
+		for (; format[i] != '%' && format[i]; i++)
 		{
 			_putchar(format[i]);
 			count++;
@@ -80,27 +80,7 @@ int _printf(const char *format, ...)
 		if (format[i + 1] == '%')
 			i += 2;
 		else
-			i++;*/
-		if (format[i] == '%')
-		{
-			f = format_specifier(&format[++i]);
-			if (f)
-			{
-				r = f(args);
-				i++;
-			}
-			else if (format[i] != ' ' && format[i])
-				r = _putchar(format[i - 1]);
-			else
-			{
-				va_end(args);
-				return (-1);
-			}
-		}
-		else
-			r = _putchar(format[i++]);
-		if (r > 0)
-			count += r;
+			i++;
 	}
 	va_end(args);
 	return (count);
