@@ -52,10 +52,10 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 
-	if (!format || (format[i] == '%' && !format[i + 1]))
+	/*if (!format || (format[i] == '%' && !format[i + 1]))
 		return (-1);
 	if (format[i] == '%' && format[i + 1] == ' ' && !format[i + 2])
-		return (-1);
+		return (-1);*/
 
 	while (format[i])
 	{
